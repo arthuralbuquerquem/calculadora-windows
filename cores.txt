@@ -1,0 +1,10 @@
+Fundo da calculadora: #1F1F1F
+
+Fundo dos botões claros: #131313
+Fundo dos botões escuros: #060606
+Fundo do botão verde: #576423
+
+Hover expandir: #353535
+Hover sair: #E81123
+Hover botões: #383838
+Hover botão verde: #9CBA27

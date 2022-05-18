@@ -1,0 +1,144 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    color: #FFF;
+    font-family: 'Roboto', arial;
+}
+
+/* BODY */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #6A6A6A;
+}
+
+/* CALCULADORA CONTAINER */
+.calculadora {
+    width: 310px;
+    height: 500px;
+    background-color: #1F1F1F;
+    box-shadow: 1px 1px 3px #000;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.expandir {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+}
+
+.expandir:hover {
+    background-color: #353535;
+}
+
+.expandir::selection {
+    background: rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+.expandirBox {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #FFF;
+}
+
+.sair {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 35px;
+}
+
+.sair:hover {
+    background-color: #E81123;
+    cursor: default;
+}
+
+span::selection {
+    background: rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+/* TELA */
+.tela {
+    display: flex;
+    justify-content: flex-end;
+    margin: 25px 15px 18px 0px;
+}
+
+#valor {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+/* BOTOES */
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(4, 74px);
+    grid-template-rows: repeat(6, 60px);
+    column-gap: 2px;
+    row-gap: 2px;
+    justify-content: center;
+}
+
+.botaoClaro,
+.botaoEscuro,
+.botaoVerde {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+}
+
+.botaoClaro {
+    background-color: #131313;
+}
+
+.botaoClaro:hover {
+    background-color: #383838;
+}
+
+.botaoClaro::selection {
+    background: rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+.botaoEscuro {
+    background-color: #060606;
+}
+
+.botaoEscuro:hover {
+    background-color: #383838;
+}
+
+.botaoEscuro::selection {
+    background: rgba(0, 0, 0, 0);
+    color: #FFF;
+}
+
+.botaoVerde {
+    background-color: #576423;
+}
+
+.botaoVerde:hover {
+    background-color: #9CBA27;
+}
+
+.botaoVerde::selection {
+    background: rgba(0, 0, 0, 0);
+    color: #FFF;
+}
