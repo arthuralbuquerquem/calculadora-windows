@@ -23,6 +23,12 @@ body {
     height: 500px;
     background-color: #1F1F1F;
     box-shadow: 1px 1px 3px #000;
+    transition: all .5s ease;
+}
+
+.sumir {
+    transform: scale(0, 0);
+    opacity: 0;
 }
 
 /* HEADER */
@@ -75,14 +81,22 @@ span::selection {
 
 /* TELA */
 .tela {
-    display: flex;
-    justify-content: flex-end;
-    margin: 25px 15px 18px 0px;
+    padding: 25px 15px 0px 15px;
 }
 
 #valor {
+    width: 275px;
     font-size: 40px;
     font-weight: 700;
+    background-color: #1F1F1F;
+    text-align: end;
+    outline: none;
+    cursor: default;
+}
+
+#valor::selection {
+    background: rgba(0, 0, 0, 0);
+    color: #FFF;
 }
 
 /* BOTOES */
@@ -93,6 +107,7 @@ span::selection {
     column-gap: 2px;
     row-gap: 2px;
     justify-content: center;
+    margin-top: 18px;
 }
 
 .botaoClaro,
@@ -141,4 +156,26 @@ span::selection {
 .botaoVerde::selection {
     background: rgba(0, 0, 0, 0);
     color: #FFF;
+}
+
+/* BOTÃO ABRIR */
+#abrir {
+    width: 100px;
+    height: 70px;
+    position: absolute;
+    background-color: #131313;
+    cursor: pointer;
+    transition: all .5s ease;
+}
+
+.escondido {
+    display: none;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 345px) {
+    .calculadora {
+        transform: scale(0.9, 0.9);
+    }
 }

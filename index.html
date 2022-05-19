@@ -13,7 +13,7 @@
     <main class="calculadora">
 
         <header>
-            <div class="expandir">
+            <div class="expandir" onclick="expandir()">
                 <div class="expandirBox"></div>
             </div>
             <div class="sair">
@@ -22,44 +22,48 @@
         </header>
 
         <div class="tela">
-            <span id="valor">0</span>
+            <input type="text" name="valor" id="valor" readonly>
         </div>
 
         <div class="botoes">
 
             <div class="botaoClaro">%</div>
-            <div class="botaoClaro">CE</div>
-            <div class="botaoClaro">C</div>
-            <div class="botaoClaro">apg</div>
+            <div class="botaoClaro" onclick="limpar()">CE</div>
+            <div class="botaoClaro" onclick="limpar()">C</div>
+            <div class="botaoClaro" onclick="limparUlt()">apg</div>
 
             <div class="botaoClaro">1/x</div>
             <div class="botaoClaro">x²</div>
             <div class="botaoClaro">√</div>
-            <div class="botaoClaro">÷</div>
+            <div class="botaoClaro" onclick="adicionar('/')">÷</div>
 
-            <div class="botaoEscuro">7</div>
-            <div class="botaoEscuro">8</div>
-            <div class="botaoEscuro">9</div>
-            <div class="botaoClaro">X</div>
+            <div class="botaoEscuro" onclick="adicionar('7')">7</div>
+            <div class="botaoEscuro" onclick="adicionar('8')">8</div>
+            <div class="botaoEscuro" onclick="adicionar('9')">9</div>
+            <div class="botaoClaro" onclick="adicionar('*')">X</div>
 
-            <div class="botaoEscuro">4</div>
-            <div class="botaoEscuro">5</div>
-            <div class="botaoEscuro">6</div>
-            <div class="botaoClaro">-</div>
+            <div class="botaoEscuro" onclick="adicionar('4')">4</div>
+            <div class="botaoEscuro" onclick="adicionar('5')">5</div>
+            <div class="botaoEscuro" onclick="adicionar('6')">6</div>
+            <div class="botaoClaro"  onclick="adicionar('-')">-</div>
 
-            <div class="botaoEscuro">1</div>
-            <div class="botaoEscuro">2</div>
-            <div class="botaoEscuro">3</div>
-            <div class="botaoClaro">+</div>
+            <div class="botaoEscuro" onclick="adicionar('1')">1</div>
+            <div class="botaoEscuro" onclick="adicionar('2')">2</div>
+            <div class="botaoEscuro" onclick="adicionar('3')">3</div>
+            <div class="botaoClaro" onclick="adicionar('+')">+</div>
 
             <div class="botaoEscuro">+/-</div>
-            <div class="botaoEscuro">0</div>
-            <div class="botaoEscuro">,</div>
-            <div class="botaoVerde">=</div>
+            <div class="botaoEscuro" onclick="adicionar('0')">0</div>
+            <div class="botaoEscuro" onclick="adicionar('.')">,</div>
+            <div class="botaoVerde" onclick="calcular()">=</div>
 
         </div>
 
     </main>
 
+    <button id="abrir" class="escondido">Abrir Calculadora</button>
+
+
+    <script src="assets/script/script.js"></script>
 </body>
 </html>
